@@ -1,0 +1,149 @@
+@keyframes textAnimation1 {
+    20% {
+        transform: none;
+    }
+
+    23% {
+        transform: skew(5deg, -5deg) translate(10px, 5px);
+    }
+
+    26% {
+        transform: none;
+    }
+
+    40% {
+        transform: none;
+    }
+
+    43% {
+        transform: skew(5deg, -10deg) translate(-5px, 2px);
+    }
+
+    46% {
+        transform: none;
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes textAnimation2 {
+    7% {
+        transform: none;
+    }
+
+    10% {
+        transform: translate(6px, -2px);
+    }
+
+    13% {
+        transform: none;
+    }
+
+    20% {
+        transform: none;
+    }
+
+    23% {
+        transform: translate(-12px, -7px);
+    }
+
+    26% {
+        transform: none;
+    }
+
+    40% {
+        transform: none;
+    }
+
+    43% {
+        transform: translate(10px, -9px);
+    }
+
+    46% {
+        transform: none;
+    }
+
+    65% {
+        transform: none;
+    }
+
+    68% {
+        transform: translate(7px, 5px);
+    }
+
+    71% {
+        transform: none;
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes textAnimation3 {
+    7% {
+        transform: none;
+    }
+
+    10% {
+        transform: translate(-6px, 2px);
+    }
+
+    13% {
+        transform: none;
+    }
+
+    20% {
+        transform: none;
+    }
+
+    23% {
+        transform: translate(12px, 7px);
+    }
+
+    26% {
+        transform: none;
+    }
+
+    40% {
+        transform: none;
+    }
+
+    43% {
+        transform: translate(-10px, 9px);
+    }
+
+    46% {
+        transform: none;
+    }
+
+    65% {
+        transform: none;
+    }
+
+    68% {
+        transform: translate(-7px, 5px);
+    }
+
+    71% {
+        transform: none;
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.text-animation-1 {
+    animation: textAnimation1 5s infinite;
+}
+
+.text-animation-2 {
+    animation: textAnimation2 5s infinite;
+}
+
+.text-animation-3 {
+    animation: textAnimation3 5s infinite;
+}
