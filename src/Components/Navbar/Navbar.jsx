@@ -1,8 +1,8 @@
 import { Link, NavLink } from 'react-router-dom';
-import hamburger from '../../assets/Images/Hamburger.svg';
-import hamburgerY from '../../assets/Images/HamburgerY.svg';
-import cross from '../../assets/Images/Cross.svg';
-import crossY from '../../assets/Images/CrossY.svg';
+import hamburger from '../../assets/Images/Icons/Hamburger.svg';
+import hamburgerY from '../../assets/Images/Icons/HamburgerY.svg';
+import cross from '../../assets/Images/Icons/Cross.svg';
+import crossY from '../../assets/Images/Icons/CrossY.svg';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -39,14 +39,14 @@ const Navbar = () => {
 
 
     return (
-        <nav className={`bg-bgGold fixed p-4 top-0 w-full z-100 ${isScrolled ? 'border-b-2 border-textWhite' : ''}`}>
+        <nav className={`bg-bgGold fixed p-2 top-0 w-full z-50 ${isScrolled ? 'border-b-2 border-textWhite' : ''}`}>
             <div className="container mx-auto flex justify-between items-center">
-                <div className="text-textWhite text-2xl font-bold">
+                <div className="text-textWhite text-lg font-bold">
                     <Link to="/">Valhalla Fest</Link>
                 </div>
 
                 {/* hamburger menu */}
-                <div className="md:hidden" onClick={toggleMenu}>
+                <div className="h-auto sm:hidden" onClick={toggleMenu}>
                     <img
                         src={
                             isClicked
@@ -54,13 +54,13 @@ const Navbar = () => {
                                 : (isOpen ? cross : hamburger)   // Affiche l'icône normale
                         }
                         alt="Hamburger Menu"
-                        className="w-8 h-8 cursor-pointer"
+                        className="w-6 h-6 cursor-pointer"
                     />
                 </div>
 
                 {/* navlinks */}
                 <ul className={`${isOpen ? 'block' : 'hidden'
-                    } absolute top-16 left-0 w-full bg-bgGold p-4 font-fontTitle md:bg-transparent md:static md:flex md:w-auto md:items-center md:p-0 md:gap-4`}
+                    } absolute top-10 right-0 w-1/2 bg-bgGold opacity-75 rounded-bl-lg p-4 text-right font-fontTitle sm:text-lg sm:bg-transparent sm:static sm:flex sm:w-auto sm:items-center sm:p-0 sm:gap-4 lg:text-xl lg:gap-8`}
                 >
                     <li>
                         <NavLink

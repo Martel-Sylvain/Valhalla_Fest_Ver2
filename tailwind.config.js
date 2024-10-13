@@ -10,6 +10,7 @@ export default {
         textWhite: '#f1f5f9',
         textYellow: '#f5ba00',
         textBlack: '#18181b',
+        textGold: '#75683b',
         bgGold: '#75683b',
         bgBlack: '#1c1917',
         glitchR: '#fe3e3e',

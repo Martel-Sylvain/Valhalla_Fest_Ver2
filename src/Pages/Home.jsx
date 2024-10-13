@@ -1,10 +1,23 @@
+import backgroundImage from "../assets/Images/Backgrounds/Texture_1.png"
+import MainImage from "../Components/MainImage/MainImage"
+import Countdown from "../Components/Countdown/Countdown"
+import SeparationLine from "../Components/SeparationLine/SeparationLine"
+import Video from "../Components/Video/Video"
 
-import backgroundImage from "../assets/Background/Texture_1.png"
 
 const Home = () => {
     return (
-        <div className='h-screen flex items-center justify-center flex-col bg-cover bg-center' style={{ backgroundImage: `url(${backgroundImage})` }}>
-            Home
+        <div className='h-full flex flex-col items-center bg-cover bg-center' style={{ backgroundImage: `url(${backgroundImage})` }}>
+
+            <MainImage />
+
+            <Countdown />
+
+            <SeparationLine />
+
+            <Video />
+
+            <SeparationLine />
         </div>
 
     )

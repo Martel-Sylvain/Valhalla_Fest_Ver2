@@ -2,10 +2,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import Infos from './Pages/Infos';
 import LineUp from './Pages/LineUp';
-import RunningOrder from './Pages/RunningOrder';
 import Tickets from './Pages/Tickets';
 import MainLayout from './Components/MainLayout/MainLayout';
 import NotFound from './Pages/NotFound';
+import RunningOrder from './pages/RunningOrder';
 
 const App = () => {
   return (
